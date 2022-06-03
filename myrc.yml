@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: mylogin-container
-          image: 7658941768/mymay:1
+          image: 7658941768/mymay:2
           ports:
             - containerPort: 8080
 
