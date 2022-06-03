@@ -5,16 +5,16 @@ metadata:
 spec:
   replicas: 4
   selector:
-    app: mynginx
+    app: mylogin-rc
   template:
     metadata:
-      name: mynginx
+      name: mylogin
       labels:
-        app: mynginx
+        app: mylogin
     spec:
       containers:
-        - name: mynginx-container
-          image: nginx
+        - name: mylogin-container
+          image: 7658941768/mymay:1
           ports:
-            - containerPort: 80
+            - containerPort: 8080
 
