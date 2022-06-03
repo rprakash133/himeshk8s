@@ -1,14 +1,13 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: mynginx-rc
+  name: mylogin-rc
 spec:
   replicas: 4
   selector:
-    app: mylogin-rc
+    app: mylogin
   template:
     metadata:
-      name: mylogin
       labels:
         app: mylogin
     spec:
