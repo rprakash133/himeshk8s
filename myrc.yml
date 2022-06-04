@@ -7,15 +7,15 @@ spec:
   replicas: 4
   selector:
      app:  mylogin
-     version: 2.6.2
+     version: 2.6.1
   template:
     metadata:
        labels:
           app: mylogin
-          version: 2.6.2
+          version: 2.6.1
     spec:
       containers:
       - name: mylogin-container   
-        image: 7658941768/mymay:2
+        image: maha4iac/mymahalogin:1
         ports:
          - containerPort: 8080 
